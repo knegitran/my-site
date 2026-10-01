@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kiyomi | Designer</title>
     <meta name="description" content="Kiyomi creates thoughtful brands, digital experiences, and visual storytelling for modern businesses." />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
@@ -22,7 +22,27 @@
           <a href="contact.html">Contact</a>
         </nav>
 
-        <a class="button button-secondary" href="contact.html">Let’s talk</a>
+        <div class="header-actions">
+          <div class="weather-card is-loading" id="weatherCard" aria-live="polite">
+            <div class="weather-header">
+              <div>
+                <span class="weather-label">Local weather</span>
+                <div class="weather-location" id="weatherLocation">Detecting your location…</div>
+              </div>
+              <div class="weather-icon" id="weatherIcon" aria-hidden="true">⏳</div>
+            </div>
+
+            <div class="weather-main">
+              <div class="weather-temp" id="weatherTemp">--°F</div>
+              <div class="weather-condition" id="weatherCondition">Checking…</div>
+            </div>
+
+            <div class="weather-meta">
+              <span class="weather-status" id="weatherStatus">Updating…</span>
+            </div>
+          </div>
+          <a class="button button-secondary" href="contact.html">Let’s talk</a>
+        </div>
       </div>
     </header>
 
@@ -72,6 +92,7 @@
                 <strong>Brand &amp; digital</strong>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -128,23 +149,23 @@
                 <h3>01 — Listen deeply</h3>
                 <p>I start by understanding your story, audience, and the emotional tone you want your brand to carry.</p>
               </div>
-              <div class="service-card" style="margin-top: 18px;">
+              <div class="service-card service-card-spaced">
                 <h3>02 — Shape the system</h3>
                 <p>I translate that clarity into visual direction, messaging, and a cohesive design framework.</p>
               </div>
-              <div class="service-card" style="margin-top: 18px;">
+              <div class="service-card service-card-spaced">
                 <h3>03 — Refine and launch</h3>
                 <p>Each touchpoint is polished for real-life use, from digital experience to print and content.</p>
               </div>
             </div>
 
             <div class="service-card">
-              <span class="eyebrow" style="margin-bottom: 10px;">What I value</span>
+              <span class="eyebrow eyebrow-compact">What I value</span>
               <h3>Simple, elevated, human.</h3>
               <p>
                 Good design should feel effortless and expressive at the same time. I build brands that are confident, intuitive, and emotionally resonant.
               </p>
-              <div class="hero-stats" style="margin-top: 22px; width: 100%;">
+              <div class="hero-stats hero-stats-wide">
                 <div class="stat">
                   <strong>Brand</strong>
                   <span>Identity + strategy</span>
@@ -195,5 +216,7 @@
         <a class="button" href="contact.html">Email me</a>
       </div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
